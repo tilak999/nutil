@@ -4,7 +4,7 @@
   "description": "Handy node based utility tools",
   "main": "index.js",
   "scripts": {
-    "main": "node index.js"
+    "main": "node ./http.server/index.js"
   },
   "repository": {
     "type": "git",

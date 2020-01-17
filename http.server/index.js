@@ -2,8 +2,8 @@ const http = require('http');
 const fs = require('fs')
 const path = require('path')
 
-//create a server object:
-http.createServer(function (req, res) {
+// request handler
+const handler = function (req, res) {
     if(req.url == '/favicon.ico') res.end()
     let currPath = '.' + req.url
     if(fs.existsSync(currPath)){
@@ -24,4 +24,11 @@ http.createServer(function (req, res) {
     } else {
         res.end()
     }
-}).listen(8080);
+}
+
+module.exports = function(args){
+    //create a server object:
+    const $port = args[1] || 8080;
+    http.createServer(handler).listen($port);
+    console.log(`Server is running on http://localhost:`+$port)
+}
