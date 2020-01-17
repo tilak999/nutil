@@ -1,0 +1,26 @@
+{
+  "name": "nutil",
+  "version": "1.0.0",
+  "description": "Handy node based utility tools",
+  "main": "index.js",
+  "scripts": {
+    "main": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tilak999/nutil.git"
+  },
+  "keywords": [
+    "utils",
+    "node-utils"
+  ],
+  "author": "Tilak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tilak999/nutil/issues"
+  },
+  "homepage": "https://github.com/Tilak999/nutil#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
