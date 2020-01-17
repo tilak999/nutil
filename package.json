@@ -22,6 +22,9 @@
   "bugs": {
     "url": "https://github.com/Tilak999/nutil/issues"
   },
+  "engines": {
+    "node": ">= 4"
+  },
   "homepage": "https://github.com/Tilak999/nutil#readme",
   "devDependencies": {
     "eslint": "^6.8.0"
