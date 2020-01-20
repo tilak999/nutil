@@ -1,6 +1,10 @@
+const cli = require('../commander');
 const http = require('http');
 const fs = require('fs')
 const path = require('path')
+
+cli.description('Simple Http server implemented using nodejs')
+    .option('-p, --port [port number]', 'port which is used by server (default: 8080)', 8080);
 
 // request handler
 const handler = function (req, res) {
@@ -27,8 +31,7 @@ const handler = function (req, res) {
 }
 
 module.exports = function(args){
-    //create a server object:
-    const $port = args[1] || 8080;
-    http.createServer(handler).listen($port);
-    console.log(`Server is running on http://localhost:`+$port)
+    cli.parse(args)
+    http.createServer(handler).listen(cli.port);
+    console.log(`Server is running on http://localhost:`+ cli.port)
 }
