@@ -1,4 +1,4 @@
-const cli = require('commander');
+const cli = require('../commander');
 const crypto = require('crypto')
 
 cli.description('Generate hexadecimal digest from a given string.')
