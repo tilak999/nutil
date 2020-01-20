@@ -1,7 +1,7 @@
 # nutil
 Handy standalone node based utilities.
 - Zero dependency
-- 2 modules (Please contribute) see: [how to contribute](./getting-started)
+- 2 modules (Please contribute) see: [how to contribute](./contribute.md)
 - Package size < 100KB
 
 ## Usage
@@ -34,7 +34,7 @@ npx nutil digest -a md5 'sample text input'
 ```
 
 ## Contribute
-Please read the contribution doc for [getting started](./getting-started).
+Please read the contribution doc for [getting started](./contribute.md).
 
 ## Contributors
 - [Tilak Sasmal](https://github.com/Tilak999/)
