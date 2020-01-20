@@ -33,11 +33,11 @@ Generate hex digest from a string. (also known as checksum)
 npx nutil digest -a md5 'sample text input'
 ```
 
-# Contribute
+## Contribute
 Please read the contribution doc for [getting started](./getting-started).
 
-# Contributors
+## Contributors
 - [Tilak Sasmal](https://github.com/Tilak999/)
 
-# License
+## License
 MIT
