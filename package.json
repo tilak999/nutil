@@ -1,6 +1,6 @@
 {
   "name": "nutil",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Handy node based utility tools",
   "main": "index.js",
   "scripts": {
