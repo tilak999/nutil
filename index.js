@@ -7,7 +7,7 @@ const input = process.argv
 
 if (input[2]) {
 
-    const modulePath = path.join(process.mainModule.path, input[2])
+    const modulePath = process.mainModule.filename.replace('index.js',input[2])
     const moduleName = input[2]
 
     if (fs.existsSync(modulePath)) {
